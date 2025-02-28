@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Documentos - NetCenter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #777;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reportes y Documentos</h1>
+    </header>
+    
+    <section>
+        <h2>Descarga de Documentos</h2>
+        <p>Selecciona el documento que deseas visualizar:</p>
+        
+        <button onclick="window.open('documentos/reporte_ventas.docx', '_blank')">📄 Reporte de Ventas</button>
+        <button onclick="window.open('documentos/analisis_gini.docx', '_blank')">📊 Análisis Gini</button>
+        <button onclick="window.open('documentos/informe_financiero.docx', '_blank')">💰 Informe Financiero</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 NetCenter - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
