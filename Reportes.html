@@ -82,7 +82,7 @@
         <p>Haz clic en un documento para previsualizarlo o descargarlo.</p>
         
         <button onclick="verDocumento('documentos/reporte_ventas.docx')">📄 Reporte de Ventas</button>
-        <button onclick="verDocumento('https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/edit?usp=sharing&ouid=118108204015647434681&rtpof=true&sd=true')">📊 Análisis Gini</button>
+        <button onclick="verDocumento('https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/preview')">📊 Análisis Gini</button>
         <button onclick="verDocumento('documentos/SKAL.docx')">📂 Documentos Adicionales</button>
     </section>
     
@@ -100,14 +100,13 @@
     <script>
         let docActual = "";
         
-        function verDocumento(ruta) {
-            docActual = window.location.origin + '/' + ruta;
+        function verDocumento(url) {
+            docActual = url;
             var visor = document.getElementById('visor');
             var visorContainer = document.getElementById('visor-container');
             var btnDescargar = document.getElementById('btnDescargar');
             
-            visor.src = url;https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/edit?usp=sharing&ouid=118108204015647434681&rtpof=true&sd=true
-            
+            visor.src = url;
             visorContainer.style.display = "block";
             btnDescargar.style.display = "block";
         }
@@ -120,5 +119,3 @@
     </script>
 </body>
 </html>
-
-
