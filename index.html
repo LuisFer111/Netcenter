@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - NetCenter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         @keyframes backgroundAnimation {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 100%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         body {
@@ -19,8 +25,8 @@
             animation: backgroundAnimation 10s infinite alternate;
             text-align: center;
             color: white;
-            position: relative;
         }
+        
         header {
             background-color: rgba(30, 30, 30, 0.9);
             padding: 20px;
@@ -28,10 +34,9 @@
             font-weight: bold;
             text-transform: uppercase;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: translateY(-20px);
             animation: fadeIn 1s ease-out forwards;
         }
+        
         .logo-container {
             margin-top: 20px;
         }
@@ -43,6 +48,7 @@
         .logo-container img:hover {
             transform: scale(1.1);
         }
+        
         nav {
             margin: 20px 0;
             padding: 10px;
@@ -52,10 +58,9 @@
             gap: 15px;
             flex-wrap: wrap;
             border-radius: 10px;
-            opacity: 0;
-            transform: translateY(-20px);
             animation: fadeIn 1s ease-out 0.5s forwards;
         }
+        
         nav a {
             text-decoration: none;
             padding: 12px 20px;
@@ -67,6 +72,7 @@
         nav a:hover {
             background-color: #2980b9;
         }
+        
         section {
             margin: 20px auto;
             padding: 20px;
@@ -74,18 +80,27 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
             width: 60%;
-            opacity: 0;
-            transform: translateY(20px);
             animation: fadeIn 1s ease-out 1s forwards;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            transition: background 0.3s;
         }
-        h2 {
-            color: #f1c40f;
-            font-size: 24px;
+        .back-to-top:hover {
+            background-color: #2980b9;
         }
+        
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -93,8 +108,8 @@
             color: white;
             font-size: 14px;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-            position: relative;
         }
+        
         .social-links {
             position: fixed;
             bottom: 20px;
@@ -113,12 +128,21 @@
             transform: scale(1.1);
         }
     </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 200) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="https://luisfer111.github.io/Netcenter/ntc_inverted.png" alt="NetCenter Logo">
+            <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
         </div>
         <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
     </header>
@@ -139,6 +163,8 @@
     <footer>
         <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
     </footer>
+    
+    <button id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆</button>
     
     <div class="social-links">
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
