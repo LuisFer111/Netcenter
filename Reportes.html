@@ -41,6 +41,13 @@
         button:hover {
             background-color: #777;
         }
+        #visor {
+            margin-top: 20px;
+            display: none;
+            width: 80%;
+            height: 600px;
+            border: none;
+        }
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -58,13 +65,38 @@
         <h2>Descarga de Documentos</h2>
         <p>Selecciona el documento que deseas visualizar:</p>
         
-        <button onclick="window.open('documentos/reporte_ventas.docx', '_blank')">📄 Reporte de Ventas</button>
-        <button onclick="window.open('documentos/Coeficiente_de_GINI_Febrero.docx', '_blank')">📊 Análisis Gini</button>
-        <button onclick="window.open('documentos/SKAL.docx', '_blank')">💰 Documentos Adicionales</button>
+        <button onclick="verDocumento('documentos/reporte_ventas.docx')">📄 Reporte de Ventas</button>
+        <button onclick="verDocumento('documentos/analisis_gini.docx')">📊 Análisis Gini</button>
+        <button onclick="verDocumento('documentos/informe_financiero.docx')">💰 Informe Financiero</button>
     </section>
     
+    <iframe id="visor"></iframe>
+    <br>
+    <button id="btnDescargar" onclick="descargarDocumento()" style="display: none;">⬇ Descargar</button>
+    
     <footer>
-        <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
+        <p>&copy; 2024 NetCenter - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+        let docActual = "";
+        
+        function verDocumento(ruta) {
+            docActual = ruta;
+            var visor = document.getElementById('visor');
+            var btnDescargar = document.getElementById('btnDescargar');
+            
+            visor.src = 'https://docs.google.com/gview?url=' + window.location.origin + '/' + ruta + '&embedded=true';
+            visor.style.display = "block";
+            btnDescargar.style.display = "block";
+        }
+        
+        function descargarDocumento() {
+            if (docActual) {
+                window.open(docActual, '_blank');
+            }
+        }
+    </script>
 </body>
 </html>
+
