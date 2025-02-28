@@ -41,12 +41,27 @@
             margin-top: 20px;
         }
         .logo-container img {
-            width: 250px;
+            width: 320px;
             height: auto;
             transition: transform 0.3s ease-in-out;
         }
         .logo-container img:hover {
             transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 30px auto;
+            width: 80%;
         }
         
         nav {
@@ -95,7 +110,7 @@
             font-size: 18px;
             cursor: pointer;
             display: none;
-            transition: background 0.3s;
+            transition: background 0.3s, opacity 0.3s;
         }
         .back-to-top:hover {
             background-color: #2980b9;
@@ -133,8 +148,10 @@
             var backToTop = document.getElementById('backToTop');
             if (window.scrollY > 200) {
                 backToTop.style.display = 'block';
+                backToTop.style.opacity = '1';
             } else {
-                backToTop.style.display = 'none';
+                backToTop.style.opacity = '0';
+                setTimeout(() => { backToTop.style.display = 'none'; }, 300);
             }
         });
     </script>
@@ -153,6 +170,8 @@
         <a href="graficas.html">📊 Gráficas y Análisis</a>
         <a href="contacto.html">📞 Contacto</a>
     </nav>
+    
+    <hr>
     
     <section>
         <h2>📌 Registro de proyectos en NetCenter</h2>
