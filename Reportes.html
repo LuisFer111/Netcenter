@@ -82,7 +82,7 @@
         <p>Haz clic en un documento para previsualizarlo o descargarlo.</p>
         
         <button onclick="verDocumento('documentos/reporte_ventas.docx')">📄 Reporte de Ventas</button>
-        <button onclick="verDocumento('documentos/Coeficiente_de_GINI_Febrero.docx')">📊 Análisis Gini</button>
+        <button onclick="verDocumento('https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/edit?usp=sharing&ouid=118108204015647434681&rtpof=true&sd=true')">📊 Análisis Gini</button>
         <button onclick="verDocumento('documentos/SKAL.docx')">📂 Documentos Adicionales</button>
     </section>
     
@@ -106,7 +106,7 @@
             var visorContainer = document.getElementById('visor-container');
             var btnDescargar = document.getElementById('btnDescargar');
             
-            visor.src = 'https://view.officeapps.live.com/op/embed.aspx?src=' + encodeURIComponent(docActual);
+            visor.src = url;https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/edit?usp=sharing&ouid=118108204015647434681&rtpof=true&sd=true
             
             visorContainer.style.display = "block";
             btnDescargar.style.display = "block";
