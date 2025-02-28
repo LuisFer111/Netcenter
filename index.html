@@ -28,6 +28,9 @@
             font-weight: bold;
             text-transform: uppercase;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease-out forwards;
         }
         .logo-container {
             margin-top: 20px;
@@ -35,6 +38,10 @@
         .logo-container img {
             width: 250px;
             height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo-container img:hover {
+            transform: scale(1.1);
         }
         nav {
             margin: 20px 0;
@@ -45,6 +52,9 @@
             gap: 15px;
             flex-wrap: wrap;
             border-radius: 10px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease-out 0.5s forwards;
         }
         nav a {
             text-decoration: none;
@@ -64,6 +74,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
             width: 60%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out 1s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         h2 {
             color: #f1c40f;
@@ -101,7 +118,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
+            <img src="https://luisfer111.github.io/Netcenter/ntc_inverted.png" alt="NetCenter Logo">
         </div>
         <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
     </header>
@@ -130,5 +147,3 @@
     </div>
 </body>
 </html>
-
-
