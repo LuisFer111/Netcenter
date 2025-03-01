@@ -15,7 +15,7 @@
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,7 +26,7 @@
             text-align: center;
             color: white;
         }
-
+        
         header {
             background-color: rgba(30, 30, 30, 0.9);
             padding: 20px;
@@ -36,17 +36,15 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             animation: fadeIn 1s ease-out forwards;
         }
-
+        
         .logo-container {
             margin-top: 20px;
         }
-
         .logo-container img {
             width: 320px;
             height: auto;
             transition: transform 0.3s ease-in-out;
         }
-
         .logo-container img:hover {
             transform: scale(1.1);
         }
@@ -65,7 +63,7 @@
             margin: 30px auto;
             width: 80%;
         }
-
+        
         .sidebar {
             position: fixed;
             left: 10px;
@@ -126,101 +124,26 @@
             flex-direction: column;
             gap: 10px;
         }
-
         .social-links a {
             text-decoration: none;
             font-size: 24px;
             color: white;
             transition: 0.3s;
         }
-
         .social-links a:hover {
             transform: scale(1.1);
         }
-
-        /* Estilos del Chatbot */
-        .chat-button {
-            position: fixed;
-            bottom: 20px;
-            right: 80px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            padding: 15px;
-            font-size: 18px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .chat-button:hover {
-            background-color: #2980b9;
-        }
-
-        .chat-window {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 300px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            display: none;
-            flex-direction: column;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .chat-header {
-            background: #2c3e50;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-            text-align: left;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .chat-body {
-            max-height: 300px;
-            overflow-y: auto;
-            padding: 10px;
-            text-align: left;
-            color: white;
-        }
-
-        .chat-footer {
-            display: flex;
-            padding: 10px;
-            border-top: 1px solid #444;
-        }
-
-        .chat-footer input {
-            flex: 1;
-            padding: 8px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        .chat-footer button {
-            background: #3498db;
-            border: none;
-            padding: 8px;
-            color: white;
-            margin-left: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+        
     </style>
 </head>
 <body>
-
     <header>
         <div class="logo-container">
             <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
         </div>
         <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
     </header>
-
+    
     <aside class="sidebar">
         <nav>
             <ul>
@@ -231,27 +154,23 @@
             </ul>
         </nav>
     </aside>
-
+    
     <hr>
-
+    
     <section>
         <h2>📌 Registro de proyectos en NetCenter</h2>
         <p>Este sitio web es mi portafolio personal donde registro todos los trabajos que he realizado en NetCenter.</p>
         <p>Explora las diferentes secciones para ver reportes, análisis y herramientas interactivas que he desarrollado.</p>
     </section>
-
-    <!-- Botón para abrir el chat -->
-    <button class="chat-button" onclick="toggleChat()">💬 Chat</button>
-
-    <!-- Ventana emergente del Chatbot -->
-    <div class="chat-window" id="chatWindow">
-        <div class="chat-header">Asistente GPT</div>
-        <div class="chat-body" id="chatBody"></div>
-        <div class="chat-footer">
-            <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
-            <button onclick="sendMessage()">Enviar</button>
-        </div>
+    
+    <footer>
+        <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
+    </footer>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
-
 </body>
 </html>
