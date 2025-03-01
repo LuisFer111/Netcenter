@@ -5,24 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportes y Documentos - NetCenter</title>
     <style>
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eef1f5;
+            background: linear-gradient(45deg, #1e1e1e, #2c3e50);
+            background-size: 300% 300%;
+            animation: backgroundAnimation 10s infinite alternate;
             text-align: center;
+            color: white;
         }
 
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: rgba(30, 30, 30, 0.9);
             padding: 20px;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-out forwards;
         }
 
-        /* Estilos del logo para mantenerlo igual que en el index */
+        /* Estilos del logo */
         .logo-container {
             margin-top: 10px;
             text-align: center;
@@ -32,6 +46,7 @@
             width: 320px;
             height: auto;
             transition: transform 0.3s ease-in-out;
+            cursor: pointer;
         }
 
         .logo-container img:hover {
@@ -41,14 +56,15 @@
         section {
             margin: 20px auto;
             padding: 20px;
-            background: white;
+            background: rgba(30, 30, 30, 0.9);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
             width: 60%;
+            animation: fadeIn 1s ease-out 1s forwards;
         }
 
         h2 {
-            color: #2c3e50;
+            color: white;
             font-size: 22px;
         }
 
@@ -74,10 +90,10 @@
             display: none;
             margin: 20px auto;
             width: 60%;
-            background: white;
+            background: rgba(30, 30, 30, 0.9);
             padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
         }
 
         iframe {
@@ -90,7 +106,7 @@
         footer {
             margin-top: 20px;
             padding: 10px;
-            background-color: #2c3e50;
+            background-color: rgba(30, 30, 30, 0.9);
             color: white;
             font-size: 14px;
         }
@@ -99,9 +115,10 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
+            <a href="index.html">
+                <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
+            </a>
         </div>
-        
     </header>
     
     <section>
