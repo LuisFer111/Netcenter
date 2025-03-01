@@ -64,67 +64,58 @@
             width: 80%;
         }
         
-        nav {
-            margin: 20px 0;
+        .sidebar {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(30, 30, 30, 0.9);
             padding: 10px;
-            background-color: rgba(44, 62, 80, 0.9);
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
             border-radius: 10px;
-            animation: fadeIn 1s ease-out 0.5s forwards;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
-        nav a {
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar nav ul li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             text-decoration: none;
-            padding: 12px 20px;
-            background-color: #3498db;
             color: white;
-            border-radius: 5px;
+            font-size: 16px;
+            padding: 10px;
             transition: 0.3s;
         }
-        nav a:hover {
-            background-color: #2980b9;
+
+        .sidebar nav ul li a i {
+            font-size: 20px;
         }
-        
+
+        .sidebar nav ul li a:hover {
+            background: #3498db;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
         section {
             margin: 20px auto;
             padding: 20px;
             background: rgba(30, 30, 30, 0.9);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
             width: 60%;
             animation: fadeIn 1s ease-out 1s forwards;
         }
-        
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            display: none;
-            transition: background 0.3s, opacity 0.3s;
-        }
-        .back-to-top:hover {
-            background-color: #2980b9;
-        }
-        
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: rgba(30, 30, 30, 0.9);
-            color: white;
-            font-size: 14px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
+
         .social-links {
             position: fixed;
             bottom: 20px;
@@ -142,19 +133,8 @@
         .social-links a:hover {
             transform: scale(1.1);
         }
+        
     </style>
-    <script>
-        window.addEventListener('scroll', function() {
-            var backToTop = document.getElementById('backToTop');
-            if (window.scrollY > 200) {
-                backToTop.style.display = 'block';
-                backToTop.style.opacity = '1';
-            } else {
-                backToTop.style.opacity = '0';
-                setTimeout(() => { backToTop.style.display = 'none'; }, 300);
-            }
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -164,12 +144,16 @@
         <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
     </header>
     
-    <nav>
-        <a href="mapa_update.html">🗺️ Mapa Interactivo</a>
-        <a href="Reportes.html">📂 Reportes y Documentos</a>
-        <a href="graficas.html">📊 Gráficas y Análisis</a>
-        <a href="contacto.html">📞 Contacto</a>
-    </nav>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="mapa_update.html"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+                <li><a href="Reportes.html"><i class="fas fa-folder"></i> Reportes</a></li>
+                <li><a href="graficas.html"><i class="fas fa-chart-bar"></i> Gráficas</a></li>
+                <li><a href="contacto.html"><i class="fas fa-phone"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </aside>
     
     <hr>
     
@@ -183,12 +167,10 @@
         <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
     </footer>
     
-    <button id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆</button>
-    
     <div class="social-links">
-        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
 </body>
 </html>
