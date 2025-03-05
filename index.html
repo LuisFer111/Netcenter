@@ -1,243 +1,230 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - NetCenter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - NetCenter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - NetCenter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - NetCenter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* ------------------------------------------------
+       ESTILOS GLOBALES Y ESTRUCTURA LIMPIA SIN DUPLICADOS
+       ------------------------------------------------- */
 
-    <style>
-        /* ----------------
-           ESTILOS GLOBALES
-           ---------------- */
-        @keyframes backgroundAnimation {
-            0% { background-position: 0% 0%; }
-            100% { background-position: 100% 100%; }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background: linear-gradient(45deg, #1e1e1e, #2c3e50);
-            background-size: 300% 300%;
-            animation: backgroundAnimation 10s infinite alternate;
-            text-align: center;
-            color: white;
-        }
-        header {
-            background-color: rgba(30, 30, 30, 0.9);
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1s ease-out forwards;
-        }
-        .logo-container {
-            margin-top: 20px;
-        }
-        .logo-container img {
-            width: 320px;   /* Tamaño del logo (no confundir con la imagen de la sección) */
-            height: auto;
-            transition: transform 0.3s ease-in-out;
-        }
-        .logo-container img:hover {
-            transform: scale(1.1);
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            margin-top: 10px;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.3);
-            margin: 30px auto;
-            width: 80%;
-        }
-
-        .sidebar {
-            position: fixed;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(30, 30, 30, 0.9);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .sidebar nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .sidebar nav ul li {
-            margin: 15px 0;
-        }
-        .sidebar nav ul li a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            padding: 10px;
-            transition: 0.3s;
-        }
-        .sidebar nav ul li a:hover {
-            background: #3498db;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(30, 30, 30, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            width: 60%; /* Ajústalo a tu gusto (70%, 80%, etc.) */
-            animation: fadeIn 1s ease-out 1s forwards;
-        }
-
-        /* IMAGEN DENTRO DE SECTION */
-        section > div > img {
-            display: block;
-            margin: 0 auto;     /* Centrar la imagen */
-            max-width: 100%;    /* Evita que sobrepase su contenedor */
-            height: auto;       /* Mantiene proporción */
-            /* Sin width fijo */
-        }
-
-        .social-links {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .social-links a {
-            text-decoration: none;
-            font-size: 24px;
-            color: white;
-            transition: 0.3s;
-        }
-        .social-links a:hover {
-            transform: scale(1.1);
-        }
-
-        /* -------------------------------
-           RESPONSIVE: PANTALLAS PEQUEÑAS
-           ------------------------------- */
-        @media (max-width: 768px) {
-        .sidebar {
-            /* Mantenemos la barra fija a la izquierda */
-            position: fixed; 
-            top: 0;
-            left: 0;
-            width: 70px;          /* Un ancho reducido en pantallas chicas */
-            height: 100vh;        /* Para que ocupe toda la altura */
-            transform: none;      /* Quitamos el translateY(-50%) */
-            box-shadow: none;     /* Puedes mantener sombra o quitarla */
-            overflow-y: auto;     /* Si la lista es larga, se hace scroll */
-        }
-
-        .sidebar nav ul {
-            display: block;       /* o flex, pero en columna */
-            margin: 0; 
-            padding: 0;
-        }
-
-        .sidebar nav ul li {
-            margin: 5px 0;        /* Ajusta el espaciado */
-        }
-
-        .sidebar nav ul li a {
-            display: block;       /* Para que cada enlace ocupe todo el ancho */
-            font-size: 14px;      /* Texto un poco más pequeño si quieres */
-            text-align: left;     /* O centrado, a tu gusto */
-            padding: 8px;         /* Ajusta la separación interior */
-        }
-    
-        /* Ajusta la sección para que no quede debajo del sidebar */
-        section {
-            width: auto;          /* O 100% si quieres que se expanda */
-            margin-left: 80px;    /* deja un margen para no quedar debajo de la barra */
-        }
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 100%; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
-        /* PANTALLAS MUY PEQUEÑAS (menor a 480px) */
-        @media (max-width: 480px) {
-            h1 { font-size: 24px; }
-            h2 { font-size: 18px; }
-            .sidebar nav ul { flex-direction: column; }
-        }
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0;
+      background: linear-gradient(45deg, #1e1e1e, #2c3e50);
+      background-size: 300% 300%;
+      animation: backgroundAnimation 10s infinite alternate;
+      text-align: center;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(30, 30, 30, 0.9);
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .logo-container {
+      margin-top: 20px;
+    }
+    .logo-container img {
+      width: 320px;   /* Tamaño del logo */
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      margin-top: 10px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    /* -------------
+       SIDEBAR FIJO
+       ------------- */
+    .sidebar {
+      position: fixed;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(30, 30, 30, 0.9);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      /* Se ajusta a su contenido; no ocupa altura completa */
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar nav ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar nav ul li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      transition: 0.3s;
+    }
+    .sidebar nav ul li a:hover {
+      background: #3498db;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    /* ----------
+       SECCIONES
+       ---------- */
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(30, 30, 30, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      width: 60%; 
+      animation: fadeIn 1s ease-out 1s forwards;
+    }
+
+    /* Imagen dentro de section */
+    section > div > img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;  /* No sobresale de su contenedor */
+      height: auto;
+    }
+
+    /* -------------
+       LINKS FIJOS
+       ------------- */
+    .social-links {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .social-links a {
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      transition: 0.3s;
+    }
+    .social-links a:hover {
+      transform: scale(1.1);
+    }
+
+    /* ------------------------------------
+       OPCIONAL: AJUSTES PEQUEÑOS EN MÓVIL
+       ------------------------------------
+       Quita este bloque si NO quieres
+       cambiar nada en pantallas pequeñas.
+    */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      /* Ajustar un poco la barra en pantallas muy pequeñas: */
+      .sidebar {
+        left: 5px;       /* Pegarla un poco más al borde */
+        padding: 5px;    /* Reducir el padding */
+      }
+      .sidebar nav ul li a {
+        font-size: 14px; /* Texto un poco más pequeño */
+        padding: 8px;
+      }
+      /* Ajustar la sección si se desea más ancho en móvil */
+      section {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
-        </div>
-        <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
-    </header>
-    
-    <aside class="sidebar">
-        <nav>
-            <ul>
-                <li><a href="mapa_update.html"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
-                <li><a href="Reportes.html"><i class="fas fa-folder"></i> Reportes</a></li>
-                <li><a href="Dashboards.html"><i class="fas fa-chart-bar"></i> Dashboards</a></li>
-                <li><a href="https://wa.me/523929410025?text=Estas%20gucci%20pa" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-phone"></i> Contacto
-</a></li>
-
-            </ul>
-        </nav>
-    </aside>
-    
-    <hr>
-    
-    <section>
-        <h2>📌 Registro de proyectos en NetCenter</h2>
-        <p>Este sitio web es mi portafolio personal donde registro todos los trabajos que he realizado en NetCenter.</p>
-        <p>Explora las diferentes secciones para ver reportes, análisis y herramientas interactivas que he desarrollado.</p>
-
-        <div style="text-align: center; margin-top: 30px;">
-        <h3 style="margin-bottom: 10px;">📈February</h3>
-        <img src="imagenes/DAILY_SALES_TREND.png" alt="Tendencia de ventas diarias">
+  <header>
+    <div class="logo-container">
+      <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
     </div>
-</section>
-    
-    <footer>
-        <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
-    </footer>
-    
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/licfernandoorozco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/LuisFer111/Netcenter" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <h1>Portafolio de Luis Fernando Orozco Ortiz</h1>
+  </header>
+  
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="mapa_update.html"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+        <li><a href="Reportes.html"><i class="fas fa-folder"></i> Reportes</a></li>
+        <li><a href="Dashboards.html"><i class="fas fa-chart-bar"></i> Dashboards</a></li>
+        <li><a href="https://wa.me/523929410025?text=Estas%20gucci%20pa" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-phone"></i> Contacto
+        </a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <hr>
+  
+  <section>
+    <h2>📌 Registro de proyectos en NetCenter</h2>
+    <p>Este sitio web es mi portafolio personal donde registro todos los trabajos que he realizado en NetCenter.</p>
+    <p>Explora las diferentes secciones para ver reportes, análisis y herramientas interactivas que he desarrollado.</p>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <h3 style="margin-bottom: 10px;">📈February</h3>
+      <img src="imagenes/DAILY_SALES_TREND.png" alt="Tendencia de ventas diarias">
     </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
+  </footer>
+  
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/licfernandoorozco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/LuisFer111/Netcenter" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
 </body>
 </html>
-
