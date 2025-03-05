@@ -4,25 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio - NetCenter</title>
+
+  <!-- Carga de Font Awesome para los íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <style>
-    /* ------------------------------------------------
-       ESTILOS GLOBALES Y ESTRUCTURA LIMPIA SIN DUPLICADOS
-       ------------------------------------------------- */
-
+    /* Animaciones y estilos globales */
     @keyframes backgroundAnimation {
       0% { background-position: 0% 0%; }
       100% { background-position: 100% 100%; }
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
 
     body {
       font-family: Arial, sans-serif;
-      margin: 0; 
+      margin: 0;
       padding: 0;
       background: url("https://luisfer111.github.io/Netcenter/imagenes/fondo.jpeg");
       background-size: cover;
@@ -38,14 +33,10 @@
       font-weight: bold;
       text-transform: uppercase;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 1s ease-out forwards;
     }
 
-    .logo-container {
-      margin-top: 20px;
-    }
     .logo-container img {
-      width: 320px;   /* Tamaño del logo */
+      width: 320px;
       height: auto;
       transition: transform 0.3s ease-in-out;
     }
@@ -53,24 +44,6 @@
       transform: scale(1.1);
     }
 
-    h1 {
-      font-size: 36px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      margin-top: 10px;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.3);
-      margin: 30px auto;
-      width: 80%;
-    }
-
-    /* -------------
-       SIDEBAR FIJO
-       ------------- */
     .sidebar {
       position: fixed;
       left: 10px;
@@ -81,7 +54,6 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
-      /* Se ajusta a su contenido; no ocupa altura completa */
     }
 
     .sidebar nav ul {
@@ -110,73 +82,108 @@
       padding: 10px;
     }
 
-    /* ----------
-       SECCIONES
-       ---------- */
-    section {
+    /* Imagen central */
+    .content-container {
+      text-align: center;
       margin: 20px auto;
-      padding: 20px;
+      max-width: 600px;
+    }
+    .content-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Calendario flotante */
+    .calendar-widget {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
       background: rgba(30, 30, 30, 0.9);
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-      width: 60%; 
-      animation: fadeIn 1s ease-out 1s forwards;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      width: 280px;
+      transition: height 0.3s ease-in-out;
+      overflow: hidden;
     }
 
-    /* Imagen dentro de section */
-    section > div > img {
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .calendar-header i {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .calendar-content {
+      padding: 10px;
       display: block;
-      margin: 0 auto;
-      max-width: 100%;  /* No sobresale de su contenedor */
-      height: auto;
     }
 
-    /* -------------
-       LINKS FIJOS
-       ------------- */
+    .calendar-widget iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .minimized .calendar-content {
+      display: none;
+    }
+
+    /* Social Links */
     .social-links {
       position: fixed;
       bottom: 20px;
       right: 20px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-    }
-    .social-links a {
-      text-decoration: none;
-      font-size: 24px;
-      color: white;
-      transition: 0.3s;
-    }
-    .social-links a:hover {
-      transform: scale(1.1);
+      gap: 15px;
     }
 
-    /* ------------------------------------
-       OPCIONAL: AJUSTES PEQUEÑOS EN MÓVIL
-       ------------------------------------
-       Quita este bloque si NO quieres
-       cambiar nada en pantallas pequeñas.
-    */
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 24px;
+    .social-links a {
+      text-decoration: none;
+      font-size: 28px;
+      color: white;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .social-links a i {
+      font-size: 30px;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+      background: none;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .calendar-widget {
+        width: 220px;
       }
-      h2 {
-        font-size: 18px;
-      }
-      /* Ajustar un poco la barra en pantallas muy pequeñas: */
-      .sidebar {
-        left: 5px;       /* Pegarla un poco más al borde */
-        padding: 5px;    /* Reducir el padding */
-      }
-      .sidebar nav ul li a {
-        font-size: 14px; /* Texto un poco más pequeño */
-        padding: 8px;
-      }
-      /* Ajustar la sección si se desea más ancho en móvil */
-      section {
-        width: 90%;
+      .calendar-widget iframe {
+        height: 200px;
       }
     }
   </style>
@@ -204,27 +211,43 @@
   </aside>
   
   <hr>
-  
+
   <section>
     <h2>📌 Registro de proyectos en NetCenter</h2>
     <p>Este sitio web es mi portafolio personal donde registro todos los trabajos que he realizado en NetCenter.</p>
     <p>Explora las diferentes secciones para ver reportes, análisis y herramientas interactivas que he desarrollado.</p>
 
-    <div style="text-align: center; margin-top: 30px;">
-      <h3 style="margin-bottom: 10px;">📈February</h3>
+    <div class="content-container">
       <img src="imagenes/DAILY_SALES_TREND.png" alt="Tendencia de ventas diarias">
     </div>
   </section>
-  
-  <footer>
-    <p>&copy; 2025 NetCenter - Todos los derechos reservados</p>
-  </footer>
-  
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/licfernandoorozco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/LuisFer111/Netcenter" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+  <!-- Calendario flotante -->
+  <div class="calendar-widget minimized" id="calendarWidget">
+    <div class="calendar-header" onclick="toggleCalendar()">
+      <span>📅 Mi Calendario</span>
+      <i class="fas fa-chevron-down" id="calendarIcon"></i>
+    </div>
+    <div class="calendar-content">
+      <iframe src="https://calendar.google.com/calendar/embed?src=lic.fernando.ortiz11%40gmail.com&ctz=America%2FMexico_City">
+      </iframe>
+    </div>
   </div>
+
+  <!-- Redes sociales -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/licfernandoorozco/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/LuisFer111/Netcenter" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <script>
+    function toggleCalendar() {
+      var widget = document.getElementById("calendarWidget");
+      widget.classList.toggle("minimized");
+    }
+  </script>
 </body>
 </html>
+
 
