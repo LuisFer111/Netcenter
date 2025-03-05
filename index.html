@@ -12,22 +12,28 @@
     <title>Inicio - NetCenter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - NetCenter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <style>
-        /* ANIMACIONES */
+        /* ----------------
+           ESTILOS GLOBALES
+           ---------------- */
         @keyframes backgroundAnimation {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 100%; }
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* ESTILOS BASE */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             background: linear-gradient(45deg, #1e1e1e, #2c3e50);
             background-size: 300% 300%;
             animation: backgroundAnimation 10s infinite alternate;
@@ -47,7 +53,7 @@
             margin-top: 20px;
         }
         .logo-container img {
-            width: 320px;
+            width: 320px;   /* Tamaño del logo (no confundir con la imagen de la sección) */
             height: auto;
             transition: transform 0.3s ease-in-out;
         }
@@ -67,6 +73,7 @@
             margin: 30px auto;
             width: 80%;
         }
+
         .sidebar {
             position: fixed;
             left: 10px;
@@ -100,15 +107,26 @@
             border-radius: 5px;
             padding: 10px;
         }
+
         section {
             margin: 20px auto;
             padding: 20px;
             background: rgba(30, 30, 30, 0.9);
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            width: 60%;
+            width: 60%; /* Ajústalo a tu gusto (70%, 80%, etc.) */
             animation: fadeIn 1s ease-out 1s forwards;
         }
+
+        /* IMAGEN DENTRO DE SECTION */
+        section > div > img {
+            display: block;
+            margin: 0 auto;     /* Centrar la imagen */
+            max-width: 100%;    /* Evita que sobrepase su contenedor */
+            height: auto;       /* Mantiene proporción */
+            /* Sin width fijo */
+        }
+
         .social-links {
             position: fixed;
             bottom: 20px;
@@ -127,23 +145,9 @@
             transform: scale(1.1);
         }
 
-        /* ---- ESTILOS PARA LA IMAGEN EN PANTALLAS GRANDES ---- */
-        section > div > img {
-            display: block;
-            margin: 0 auto;  /* centrado */
-            max-width: 100%; /* nunca más ancho que su contenedor */
-            height: auto;
-            width: 70%;      /* ocupa el 70% del contenedor en escritorio */
-        }
-
-        /* PANTALLAS MEDIANAS (por debajo de 1024px) */
-        @media (max-width: 1024px) {
-            section > div > img {
-                width: 80%;
-            }
-        }
-
-        /* PANTALLAS PEQUEÑAS (por debajo de 768px) */
+        /* -------------------------------
+           RESPONSIVE: PANTALLAS PEQUEÑAS
+           ------------------------------- */
         @media (max-width: 768px) {
             .sidebar {
                 position: relative;
@@ -170,10 +174,6 @@
                 width: 90%;
                 padding: 15px;
             }
-            /* Ajustar la imagen al 90% del contenedor en pantallas pequeñas */
-            section > div > img {
-                width: 90%;
-            }
             footer {
                 font-size: 12px;
                 padding: 10px;
@@ -189,17 +189,11 @@
             }
         }
 
-        /* PANTALLAS MUY PEQUEÑAS (por debajo de 480px) */
+        /* PANTALLAS MUY PEQUEÑAS (menor a 480px) */
         @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 18px;
-            }
-            .sidebar nav ul {
-                flex-direction: column;
-            }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            .sidebar nav ul { flex-direction: column; }
         }
     </style>
 </head>
