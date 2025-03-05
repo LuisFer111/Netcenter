@@ -204,9 +204,21 @@
             .sidebar nav ul {
                 flex-direction: column;
             }
-    </style>
-</head>
+        /* Hacer que la imagen dentro del div de <section> sea responsive */
+        section > div > img {
+            max-width: 100%;  /* No será más grande que su contenedor */
+            height: auto;      /* Mantiene la proporción correcta */
+            display: block;    /* Evita márgenes blancos debajo */
+            margin: auto;      /* Centra la imagen */
+        }
 
+        /* Ajuste adicional para móviles */
+        @media (max-width: 768px) {
+            section > div > img {
+                width: 90%; /* Reduce el tamaño en pantallas pequeñas */
+            }
+        }       
+            
     </style>
 </head>
 <body>
@@ -240,7 +252,7 @@
 
         <div style="text-align: center; margin-top: 30px;">
         <h3 style="margin-bottom: 10px;">📈February</h3>
-        <img src="imagenes/DAILY_SALES_TREND.png" alt="Tendencia de ventas diarias" width="600">
+        <img src="imagenes/DAILY_SALES_TREND.png" alt="Tendencia de ventas diarias">
     </div>
 </section>
     
