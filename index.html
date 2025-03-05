@@ -135,8 +135,75 @@
         }
         <head>
     <style>
-        @media (max-width: 768px) { /* ...CSS aquí... */ }
-        @media (max-width: 480px) { /* ...CSS aquí... */ }
+        @media (max-width: 768px) {  
+            .sidebar {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+                box-shadow: none;
+            }
+    
+            .sidebar nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0;
+            }
+    
+            .sidebar nav ul li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .sidebar nav ul li a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            /* Ajustar secciones para que ocupen más ancho en móviles */
+            section {
+                width: 90%;
+                padding: 15px;
+            }
+
+            /* Hacer que las imágenes sean responsivas */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Ajustar footer para mejor visibilidad */
+            footer {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            /* Ajustar los enlaces de redes sociales */
+            .social-links {
+                position: relative;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .social-links a {
+                font-size: 20px;
+                margin: 0 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {  
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .sidebar nav ul {
+                flex-direction: column;
+            }
     </style>
 </head>
 
