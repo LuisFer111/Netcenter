@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportes y Documentos - NetCenter</title>
     <style>
+        /* Animación del fondo */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 0; 
             padding: 0;
-            background: linear-gradient(45deg, #1e1e1e, #2c3e50);
+            background: url("https://luisfer111.github.io/Netcenter/imagenes/fondo.jpeg");
+            background-size: cover;
+            animation: backgroundAnimation 60s infinite alternate;
             text-align: center;
             color: white;
-        }
+        }  
 
         header {
             background-color: rgba(30, 30, 30, 0.9);
@@ -23,7 +35,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Estilos del logo */
+        /* Logo */
         .logo-container {
             margin-top: 10px;
             text-align: center;
@@ -40,13 +52,15 @@
             transform: scale(1.1);
         }
 
-        section {
+        /* Contenedor principal (AHORA SIN ESTIRARSE MÁS DE LO NECESARIO) */
+        main {
             margin: 20px auto;
             padding: 20px;
             background: rgba(30, 30, 30, 0.9);
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
             width: 60%;
+            max-width: 600px; /* Evita que la caja crezca demasiado */
         }
 
         h2 {
@@ -54,6 +68,7 @@
             font-size: 22px;
         }
 
+        /* Botones */
         button {
             display: block;
             width: 80%;
@@ -72,10 +87,12 @@
             background-color: #2980b9;
         }
 
+        /* Contenedor del visor de documentos */
         #visor-container {
             display: none;
             margin: 20px auto;
             width: 60%;
+            max-width: 600px;
             background: rgba(30, 30, 30, 0.9);
             padding: 15px;
             border-radius: 10px;
@@ -89,12 +106,14 @@
             border-radius: 5px;
         }
 
+        /* Footer sin fondo negro */
         footer {
-            margin-top: 20px;
+            margin-top: auto; /* Se mantiene abajo sin ser una franja */
             padding: 10px;
-            background-color: rgba(30, 30, 30, 0.9);
-            color: white;
             font-size: 14px;
+            text-align: center;
+            background: none; /* Elimina el fondo negro */
+            color: white; /* Solo deja las letras blancas */
         }
     </style>
 </head>
@@ -107,14 +126,14 @@
         </div>
     </header>
     
-    <section>
+    <main>
         <h2>📂 Reportes y Documentos</h2>
         <p>Haz clic en un documento para previsualizarlo o descargarlo.</p>
         
         <button onclick="verDocumento('documentos/reporte_ventas.docx', '')">📄 Reporte de Ventas</button>
         <button onclick="verDocumento('https://docs.google.com/document/d/1BemEkXiS5MzJugnjtFNYs75eAKMeEPch/preview', 'documentos/Coeficiente_de_GINI_Febrero.docx')">📊 Análisis Gini</button>
         <button onclick="verDocumento('https://docs.google.com/document/d/1aAm2xboXF-cQJBfAPODsD_v4_QfTIYcg/preview', 'documentos/SKAL.docx')">📂 Documentos Adicionales</button>
-    </section>
+    </main>
     
     <div id="visor-container">
         <h3>📑 Vista previa del documento</h3>
@@ -150,4 +169,3 @@
     </script>
 </body>
 </html>
-
