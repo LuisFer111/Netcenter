@@ -149,45 +149,41 @@
            RESPONSIVE: PANTALLAS PEQUEÑAS
            ------------------------------- */
         @media (max-width: 768px) {
-            .sidebar {
-                position: relative;
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-                box-shadow: none;
-            }
-            .sidebar nav ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 0;
-            }
-            .sidebar nav ul li {
-                display: inline-block;
-                margin: 5px;
-            }
-            .sidebar nav ul li a {
-                padding: 10px;
-                font-size: 14px;
-            }
-            section {
-                width: 90%;
-                padding: 15px;
-            }
-            footer {
-                font-size: 12px;
-                padding: 10px;
-            }
-            .social-links {
-                position: relative;
-                text-align: center;
-                margin-top: 10px;
-            }
-            .social-links a {
-                font-size: 20px;
-                margin: 0 5px;
-            }
+        .sidebar {
+            /* Mantenemos la barra fija a la izquierda */
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 70px;          /* Un ancho reducido en pantallas chicas */
+            height: 100vh;        /* Para que ocupe toda la altura */
+            transform: none;      /* Quitamos el translateY(-50%) */
+            box-shadow: none;     /* Puedes mantener sombra o quitarla */
+            overflow-y: auto;     /* Si la lista es larga, se hace scroll */
         }
+
+        .sidebar nav ul {
+            display: block;       /* o flex, pero en columna */
+            margin: 0; 
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 5px 0;        /* Ajusta el espaciado */
+        }
+
+        .sidebar nav ul li a {
+            display: block;       /* Para que cada enlace ocupe todo el ancho */
+            font-size: 14px;      /* Texto un poco más pequeño si quieres */
+            text-align: left;     /* O centrado, a tu gusto */
+            padding: 8px;         /* Ajusta la separación interior */
+        }
+    
+        /* Ajusta la sección para que no quede debajo del sidebar */
+        section {
+            width: auto;          /* O 100% si quieres que se expanda */
+            margin-left: 80px;    /* deja un margen para no quedar debajo de la barra */
+        }
+    }
 
         /* PANTALLAS MUY PEQUEÑAS (menor a 480px) */
         @media (max-width: 480px) {
