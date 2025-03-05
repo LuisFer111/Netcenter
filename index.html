@@ -73,6 +73,7 @@
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
         }
 
         .sidebar nav ul {
@@ -135,14 +136,25 @@
         }
         <head>
     <style>
-        @media (max-width: 768px) {  
+        
+         @media (max-width: 768px) {
             .sidebar {
-                position: relative;
+                position: fixed;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: auto;
+                background: rgba(30, 30, 30, 0.95);
                 text-align: center;
                 padding: 10px 0;
-                box-shadow: none;
+                z-index: 1000; /* Mantiene el menú arriba */
             }
+
+            section {
+                margin-top: 60px; /* Agrega espacio para que el menú no lo cubra */
+            }
+        }
+  
     
             .sidebar nav ul {
                 display: flex;
