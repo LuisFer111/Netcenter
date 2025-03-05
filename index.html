@@ -6,16 +6,24 @@
     <title>Inicio - NetCenter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - NetCenter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* ANIMACIONES */
         @keyframes backgroundAnimation {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 100%; }
         }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
+        /* ESTILOS BASE */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,7 +34,6 @@
             text-align: center;
             color: white;
         }
-        
         header {
             background-color: rgba(30, 30, 30, 0.9);
             padding: 20px;
@@ -36,7 +43,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             animation: fadeIn 1s ease-out forwards;
         }
-        
         .logo-container {
             margin-top: 20px;
         }
@@ -48,14 +54,12 @@
         .logo-container img:hover {
             transform: scale(1.1);
         }
-
         h1 {
             font-size: 36px;
             font-weight: bold;
             letter-spacing: 1.5px;
             margin-top: 10px;
         }
-
         hr {
             border: 0;
             height: 1px;
@@ -63,7 +67,6 @@
             margin: 30px auto;
             width: 80%;
         }
-        
         .sidebar {
             position: fixed;
             left: 10px;
@@ -74,17 +77,14 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         .sidebar nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
         .sidebar nav ul li {
             margin: 15px 0;
         }
-
         .sidebar nav ul li a {
             display: flex;
             align-items: center;
@@ -95,17 +95,11 @@
             padding: 10px;
             transition: 0.3s;
         }
-
-        .sidebar nav ul li a i {
-            font-size: 20px;
-        }
-
         .sidebar nav ul li a:hover {
             background: #3498db;
             border-radius: 5px;
             padding: 10px;
         }
-
         section {
             margin: 20px auto;
             padding: 20px;
@@ -115,7 +109,6 @@
             width: 60%;
             animation: fadeIn 1s ease-out 1s forwards;
         }
-
         .social-links {
             position: fixed;
             bottom: 20px;
@@ -133,9 +126,25 @@
         .social-links a:hover {
             transform: scale(1.1);
         }
-        <head>
-    <style>
-        @media (max-width: 768px) {  
+
+        /* ---- ESTILOS PARA LA IMAGEN EN PANTALLAS GRANDES ---- */
+        section > div > img {
+            display: block;
+            margin: 0 auto;  /* centrado */
+            max-width: 100%; /* nunca más ancho que su contenedor */
+            height: auto;
+            width: 70%;      /* ocupa el 70% del contenedor en escritorio */
+        }
+
+        /* PANTALLAS MEDIANAS (por debajo de 1024px) */
+        @media (max-width: 1024px) {
+            section > div > img {
+                width: 80%;
+            }
+        }
+
+        /* PANTALLAS PEQUEÑAS (por debajo de 768px) */
+        @media (max-width: 768px) {
             .sidebar {
                 position: relative;
                 width: 100%;
@@ -143,91 +152,58 @@
                 padding: 10px 0;
                 box-shadow: none;
             }
-    
             .sidebar nav ul {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 0;
             }
-    
             .sidebar nav ul li {
                 display: inline-block;
                 margin: 5px;
             }
-
             .sidebar nav ul li a {
                 padding: 10px;
                 font-size: 14px;
             }
-
-            /* Ajustar secciones para que ocupen más ancho en móviles */
             section {
                 width: 90%;
                 padding: 15px;
             }
-
-            /* Hacer que las imágenes sean responsivas */
-            img {
-                max-width: 100%;
-                height: auto;
+            /* Ajustar la imagen al 90% del contenedor en pantallas pequeñas */
+            section > div > img {
+                width: 90%;
             }
-
-            /* Ajustar footer para mejor visibilidad */
             footer {
                 font-size: 12px;
                 padding: 10px;
             }
-
-            /* Ajustar los enlaces de redes sociales */
             .social-links {
                 position: relative;
                 text-align: center;
                 margin-top: 10px;
             }
-
             .social-links a {
                 font-size: 20px;
                 margin: 0 5px;
             }
         }
-        
-        @media (max-width: 480px) {  
+
+        /* PANTALLAS MUY PEQUEÑAS (por debajo de 480px) */
+        @media (max-width: 480px) {
             h1 {
                 font-size: 24px;
             }
-
             h2 {
                 font-size: 18px;
             }
-
             .sidebar nav ul {
                 flex-direction: column;
             }
-        /* Hacer que la imagen dentro del div de <section> sea responsive */
-        section > div > img {
-            max-width: 100%;  /* No será más grande que su contenedor */
-            height: auto;      /* Mantiene la proporción correcta */
-            display: block;    /* Evita márgenes blancos debajo */
-            margin: auto;      /* Centra la imagen */
-            width: 80%;
         }
-            /* Ajuste para pantallas medianas */
-        @media (max-width: 1024px) {
-            section > div > img {
-                width: 90%;  /* Hace la imagen más ancha en pantallas medianas */
-            }
-        }
-
-        /* Ajuste adicional para móviles */
-        @media (max-width: 768px) {
-            section > div > img {
-                width: 90%; /* Reduce el tamaño en pantallas pequeñas */
-            }
-        }       
-            
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
