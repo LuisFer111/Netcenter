@@ -210,6 +210,13 @@
             height: auto;      /* Mantiene la proporción correcta */
             display: block;    /* Evita márgenes blancos debajo */
             margin: auto;      /* Centra la imagen */
+            width: 80%;
+        }
+            /* Ajuste para pantallas medianas */
+        @media (max-width: 1024px) {
+            section > div > img {
+                width: 90%;  /* Hace la imagen más ancha en pantallas medianas */
+            }
         }
 
         /* Ajuste adicional para móviles */
