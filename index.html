@@ -266,5 +266,86 @@
       widget.classList.toggle("minimized");
     }
   </script>
+    <!-- Ícono carpeta flotante ajustado FINAL -->
+<div class="files-widget" id="filesWidget">
+    <div class="files-header" onclick="toggleFiles()">
+      <i class="fas fa-folder" style="color:white; font-size:30px;"></i>
+    </div>
+    <div class="files-content" id="filesContent" style="display:none;">
+      <ul>
+        <li><a href="analisis_excel/reporte_enero.xlsx" download>📄 Reporte Enero 2025.xlsx</a></li>
+        <li><a href="analisis_excel/ventas_febrero.xlsx" download>📄 Ventas Febrero 2025.xlsx</a></li>
+        <li><a href="analisis_excel/inventario_marzo.xlsx" download>📄 Inventario Marzo 2025.xlsx</a></li>
+      </ul>
+    </div>
+  </div>
+  <style>
+  .files-widget {
+    position: fixed;
+    top: 180px; /* altura confirmada por ti */
+    right: 10px; /* alineado igual que redes sociales */
+    cursor: pointer;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .files-header {
+    background: transparent; /* sin fondo inicialmente */
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  
+  .files-content {
+    background: rgba(30, 30, 30, 0.9); /* fondo solo en contenido */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    margin-top: 5px;
+  }
+  
+  .files-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .files-content ul li {
+    margin: 8px 0;
+  }
+  
+  .files-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .files-content ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .files-widget {
+      right: 20px; /* ajuste móvil igual a redes sociales */
+      top: 140px;
+    }
+  }
+  </style>
+  
+  <script>
+  function toggleFiles() {
+    const content = document.getElementById('filesContent');
+    const header = document.querySelector('.files-header');
+  
+    if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'block';
+      header.style.background = 'rgba(30, 30, 30, 0.9)';
+    } else {
+      content.style.display = 'none';
+      header.style.background = 'transparent';
+    }
+  }
+  </script>
 </body>
 </html>
