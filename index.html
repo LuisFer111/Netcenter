@@ -272,13 +272,54 @@
       <i class="fas fa-folder" style="color:white; font-size:30px;"></i>
     </div>
     <div class="files-content" id="filesContent" style="display:none;">
-      <ul>
-        <li><a href="analisis_excel/reporte_enero.xlsx" download>📄 Reporte Enero 2025.xlsx</a></li>
-        <li><a href="analisis_excel/ventas_febrero.xlsx" download>📄 Ventas Febrero 2025.xlsx</a></li>
-        <li><a href="analisis_excel/inventario_marzo.xlsx" download>📄 Inventario Marzo 2025.xlsx</a></li>
+      <ul id="filesList">
+        <!-- Aquí se cargarán automáticamente tus archivos -->
       </ul>
     </div>
   </div>
+  <script>
+    async function cargarArchivos() {
+      const username = 'LuisFer111';
+      const repo = 'Netcenter';
+      const carpeta = 'analisis_excel';
+      const url = `https://api.github.com/repos/${username}/${repo}/contents/${carpeta}`;
+    
+      const lista = document.getElementById('filesList');
+    
+      try {
+        const respuesta = await fetch(url);
+        const archivos = await respuesta.json();
+    
+        lista.innerHTML = ''; // Limpiar lista antes de cargar
+    
+        archivos.forEach(archivo => {
+          const nombreArchivo = archivo.name;
+          const descargaArchivo = archivo.download_url;
+    
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${descargaArchivo}" download>📄 ${nombreArchivo}</a>`;
+          lista.appendChild(li);
+        });
+      } catch (error) {
+        lista.innerHTML = '<li>No se pudieron cargar los archivos.</li>';
+      }
+    }
+    
+    function toggleFiles() {
+      const content = document.getElementById('filesContent');
+      const header = document.querySelector('.files-header');
+    
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        header.style.background = 'rgba(30, 30, 30, 0.9)';
+        cargarArchivos(); // carga automáticamente al abrir
+      } else {
+        content.style.display = 'none';
+        header.style.background = 'transparent';
+      }
+    }
+    </script>
+    
   <style>
   .files-widget {
     position: fixed;
