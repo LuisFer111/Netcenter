@@ -7,6 +7,10 @@
 
   <!-- Carga de Font Awesome para los íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Carga de la fuente Roboto desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     /* Animaciones y estilos globales */
@@ -16,7 +20,8 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      /* Aplicamos la fuente Roboto a todo el documento */
+      font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: url("https://luisfer111.github.io/Netcenter/imagenes/fondo.jpeg");
@@ -29,10 +34,23 @@
     header {
       background-color: rgba(30, 30, 30, 0.9);
       padding: 20px;
-      font-size: 28px;
+      /* Se quita el font-size grande aquí para manejarlo en el h1 más abajo */
       font-weight: bold;
       text-transform: uppercase;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Ajuste de tamaño de la cabecera */
+    header h1 {
+      margin: 0;
+      font-size: 20px; /* tamaño base para móviles */
+    }
+
+    /* A partir de pantallas con ancho >= 768px, aumentamos el tamaño del h1 */
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 26px; /* Ajusta este valor a tu gusto */
+      }
     }
 
     .logo-container img {
@@ -86,12 +104,13 @@
     .content-container {
       text-align: center;
       margin: 20px auto;
-      max-width: 600px;
+      /* Aseguramos que la imagen no se quede muy chica */
+      max-width: 900px; /* ancho máximo del contenedor en escritorio */
     }
+
     .content-container img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
+      width: 100%;   /* 100% del contenedor */
+      height: auto;  /* mantiene la proporción */
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
@@ -249,5 +268,3 @@
   </script>
 </body>
 </html>
-
-
