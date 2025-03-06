@@ -126,6 +126,7 @@
       width: 280px;
       transition: height 0.3s ease-in-out;
       overflow: hidden;
+      z-index: 2000;
     }
 
     .calendar-header {
@@ -246,7 +247,7 @@
 </div>
 
 <!-- Footer fijo solo con el texto, sin fondo ni estilos adicionales -->
-<footer style="
+<footer id="mainFooter" style="
     text-align:center; 
     color:white; 
     padding:10px; 
@@ -254,7 +255,7 @@
     bottom:0; 
     width:100%; 
     font-size:14px;
-    z-index:1000;">
+    z-index:500;">
   &copy; 2025 NetCenter - Todos los derechos reservados
 </footer>
 
