@@ -1,45 +1,131 @@
 {
     "TAFER": [
         {
-            "nombre": "NOMBRE "
+            "nombre": "NOMBRE",
+            "posicion": "POSICION",
+            "iniciales": "INICIALES CERTIFICADOS",
+            "nomenclatura": "NOMENCLATURA",
+            "campanas": "CAMPAÑAS",
+            "turno": "TURNO",
+            "extension": "N/A",
+            "subordinados": []
         },
         {
             "nombre": "KYARA TREJO",
+            "posicion": "GERENTE TAFER",
+            "iniciales": "-",
+            "nomenclatura": "SOM2 - Senses of Mexico TOG2 - Save to Travel TOG4- Save to Travel",
+            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+            "turno": "TURNO ESPECIAL",
+            "extension": "N/A",
             "subordinados": [
                 {
-                    "nombre": "MARIA MACIAS OROZCO ",
+                    "nombre": "MARIA MACIAS OROZCO",
+                    "posicion": "GERENTE DE VENTAS SM",
+                    "iniciales": "MM",
+                    "nomenclatura": "SOM2 - Senses of Mexico TOG2 - Save to Travel TOG4- Save to Travel",
+                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                    "turno": "COMPLETO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
-                            "nombre": "ANGEL MENDOZA CASTELAN ",
+                            "nombre": "ANGEL MENDOZA CASTELAN",
+                            "posicion": "GERENTE DE PISO (TOG2-)",
+                            "iniciales": "AM",
+                            "nomenclatura": "SOM2 - Senses of Mexico TOG2 - Save to Travel",
+                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                            "turno": "COMPLETO MATUTINO",
+                            "extension": "N/A",
                             "subordinados": [
                                 {
-                                    "nombre": "VALERIA CORREA FIGUEROA "
+                                    "nombre": "VALERIA CORREA FIGUEROA",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "VC",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG2 - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "EMILIO MARTINEZ CATALAN "
+                                    "nombre": "EMILIO MARTINEZ CATALAN",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "EM",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG2 - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 }
                             ]
                         },
                         {
-                            "nombre": "BRAYAN ROMERO ",
+                            "nombre": "BRAYAN ROMERO",
+                            "posicion": "GERENTE DE PISO (TOG4-)",
+                            "iniciales": "BR",
+                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                            "turno": "COMPLETO VESPERTINO",
+                            "extension": "N/A",
                             "subordinados": [
                                 {
-                                    "nombre": "DANIEL ASUNCION SANCHEZ ",
+                                    "nombre": "DANIEL ASUNCION SANCHEZ",
+                                    "posicion": "SUPERVISOR (TOG4-)",
+                                    "iniciales": "DA",
+                                    "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "COMPLETO VESPERTINO",
+                                    "extension": "N/A",
                                     "subordinados": [
                                         {
-                                            "nombre": "DIEGO RAMIREZ "
+                                            "nombre": "DIEGO RAMIREZ",
+                                            "posicion": "AGENTE / CERRADOR",
+                                            "iniciales": "DR",
+                                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                            "turno": "MEDIO TURNO VESPERTINO",
+                                            "extension": "N/A",
+                                            "subordinados": []
                                         },
                                         {
-                                            "nombre": "CRISTIAN GOMEZ "
+                                            "nombre": "CRISTIAN GOMEZ",
+                                            "posicion": "AGENTE / CERRADOR",
+                                            "iniciales": "CG",
+                                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                            "turno": "MEDIO TURNO VESPERTINO",
+                                            "extension": "N/A",
+                                            "subordinados": []
                                         },
                                         {
-                                            "nombre": "YAEL CASTAÑEDA "
+                                            "nombre": "YAEL CASTAÑEDA",
+                                            "posicion": "AGENTE / CERRADOR",
+                                            "iniciales": "AY",
+                                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                            "turno": "MEDIO TURNO VESPERTINO",
+                                            "extension": "N/A",
+                                            "subordinados": []
                                         },
                                         {
-                                            "nombre": "NATASHA MARTINEZ "
+                                            "nombre": "NATASHA MARTINEZ",
+                                            "posicion": "AGENTE / CERRADOR",
+                                            "iniciales": "NM",
+                                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                            "turno": "MEDIO TURNO VESPERTINO",
+                                            "extension": "N/A",
+                                            "subordinados": []
                                         },
                                         {
-                                            "nombre": "RICARDO GUEVARA "
+                                            "nombre": "RICARDO GUEVARA",
+                                            "posicion": "AGENTE / CERRADOR",
+                                            "iniciales": "RG",
+                                            "nomenclatura": "SOM2 - Senses of Mexico  TOG4- Save to Travel",
+                                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                            "turno": "TURNO ESPECIAL",
+                                            "extension": "N/A",
+                                            "subordinados": []
                                         }
                                     ]
                                 }
@@ -49,42 +135,131 @@
                 },
                 {
                     "nombre": "LUIS SOTO ZANABRIA",
+                    "posicion": "GERENTE DE VENTAS OB",
+                    "iniciales": "LZ",
+                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                    "turno": "COMPLETO MATUTINO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
                             "nombre": "CHRISTIAN FLORES",
+                            "posicion": "GERENTE DE PISO (TOG1-SOM2- AMTF)",
+                            "iniciales": "CF",
+                            "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                            "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                            "turno": "COMPLETO MATUTINO",
+                            "extension": "N/A",
                             "subordinados": [
                                 {
-                                    "nombre": "VIVIANA GASTELUM"
+                                    "nombre": "VIVIANA GASTELUM",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "VG",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "ANA KAREN HERNANDEZ"
+                                    "nombre": "ANA KAREN HERNANDEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "AH",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "ADAD IBARRA RANGEL"
+                                    "nombre": "ADAD IBARRA RANGEL",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "AI",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "LUIS MARTINEZ GOMEZ"
+                                    "nombre": "LUIS MARTINEZ GOMEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "LM",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "LUZ ARELI GARCIA"
+                                    "nombre": "LUZ ARELI GARCIA",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "AG",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "JOSE OCTAVIO PEREZ"
+                                    "nombre": "JOSE OCTAVIO PEREZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "OP",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "EVERT RUTGER"
+                                    "nombre": "EVERT RUTGER",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "ER",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "MARCO ANTONIO SANCHEZ"
+                                    "nombre": "MARCO ANTONIO SANCHEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "TS",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "PERLA JOCELINE CHAVEZ"
+                                    "nombre": "PERLA JOCELINE CHAVEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "PC",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "ITZEL SAMANTHA GONZALEZ"
+                                    "nombre": "ITZEL SAMANTHA GONZALEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "SG",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "JORGE YAN HERNANDEZ"
+                                    "nombre": "JORGE YAN HERNANDEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "JH",
+                                    "nomenclatura": "SOM2 - Senses of Mexico TOG1 - Save to Travel AMTF - Save to Travel",
+                                    "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
+                                    "turno": "MEDIO TURNO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 }
                             ]
                         }
@@ -95,57 +270,173 @@
     ],
     "VILLAGROUP": [
         {
-            "nombre": "NOMBRE "
+            "nombre": "NOMBRE",
+            "posicion": "POSICION",
+            "iniciales": "INICIALES CERTIFICADOS",
+            "nomenclatura": "NOMENCLATURA",
+            "campanas": "CAMPAÑAS",
+            "turno": "TURNO",
+            "extension": "N/A",
+            "subordinados": []
         },
         {
             "nombre": "PABLO FERNANDEZ",
+            "posicion": "GERENTE VENTAS",
+            "iniciales": "PF",
+            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+            "turno": "TURNO ESPECIAL",
+            "extension": "N/A",
             "subordinados": [
                 {
                     "nombre": "EYMAR SANCHEZ",
+                    "posicion": "GERENTE DE PISO",
+                    "iniciales": "EM",
+                    "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                    "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                    "turno": "COMPLETO MATUTINO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
-                            "nombre": "NAOMI SANCHEZ"
+                            "nombre": "NAOMI SANCHEZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "NS",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "ANA ALVAREZ"
+                            "nombre": "ANA ALVAREZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "AA",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "LUIS JIMENEZ"
+                            "nombre": "LUIS JIMENEZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "LJ",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "TURNO COMPLETO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "CITLALI SANCHEZ"
+                            "nombre": "CITLALI SANCHEZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "CS",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "MIGUEL SALAIS"
+                            "nombre": "MIGUEL SALAIS",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "MS",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "TURNO COMPLETO",
+                            "extension": "N/A",
+                            "subordinados": []
                         }
                     ]
                 },
                 {
                     "nombre": "REYNALDO AVILA",
+                    "posicion": "GERENTE DE PISO",
+                    "iniciales": "RA",
+                    "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                    "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                    "turno": "COMPLETO MATUTINO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
-                            "nombre": "GUSTAVO MACIEL"
+                            "nombre": "GUSTAVO MACIEL",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "GA",
+                            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "ORLANDO DELGADO"
+                            "nombre": "ORLANDO DELGADO",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "OD",
+                            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "GLORIA MEDINA"
+                            "nombre": "GLORIA MEDINA",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "GM",
+                            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "MELISSA ESPINOZA"
+                            "nombre": "MELISSA ESPINOZA",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "ME",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "NOE GOMEZ"
+                            "nombre": "NOE GOMEZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "NG",
+                            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "EDUARDO CRUZ"
+                            "nombre": "EDUARDO CRUZ",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "ES",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "DIEGO VILLA"
+                            "nombre": "DIEGO VILLA",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "VD",
+                            "nomenclatura": "AMVG - Amazing Villagroup BVAM - Beach Vibes Americas",
+                            "campanas": "Amazing Villagroup - Beach Vibes Americas",
+                            "turno": "TURNO COMPLETO",
+                            "extension": "N/A",
+                            "subordinados": []
                         },
                         {
-                            "nombre": "SUI SARABIA"
+                            "nombre": "SUI SARABIA",
+                            "posicion": "AGENTE / CERRADOR",
+                            "iniciales": "SS",
+                            "nomenclatura": "AMVG - Amazing Villagroup",
+                            "campanas": "Amazing Villagroup",
+                            "turno": "MEDIO TURNO",
+                            "extension": "N/A",
+                            "subordinados": []
                         }
                     ]
                 }
@@ -154,43 +445,131 @@
     ],
     "BALFER": [
         {
-            "nombre": "NOMBRE "
+            "nombre": "NOMBRE",
+            "posicion": "POSICION",
+            "iniciales": "INICIALES CERTIFICADOS",
+            "nomenclatura": "NOMENCLATURA",
+            "campanas": "CAMPAÑAS",
+            "turno": "TURNO",
+            "extension": "N/A",
+            "subordinados": []
         },
         {
             "nombre": "ENRIQUE ROBLES",
+            "posicion": "GERENTE DE VENTAS",
+            "iniciales": "HR",
+            "nomenclatura": "AMX1-AMX2- AMX3- AMX4 - Amazing Mexico",
+            "campanas": "Amazing Mexico",
+            "turno": "COMPLETO MATUTINO",
+            "extension": "N/A",
             "subordinados": [
                 {
-                    "nombre": "PASCUAL REYNOSO"
+                    "nombre": "PASCUAL REYNOSO",
+                    "posicion": "CERRADOR",
+                    "iniciales": "PR",
+                    "nomenclatura": "AMX1-AMX2 - Amazing Mexico",
+                    "campanas": "Amazing Mexico",
+                    "turno": "TURNO COMPLETO H.O",
+                    "extension": "N/A",
+                    "subordinados": []
                 },
                 {
                     "nombre": "KEVIN GARCIA",
+                    "posicion": "GERENTE DE PISO",
+                    "iniciales": "KG",
+                    "nomenclatura": "AMX1- Amazing Mexico",
+                    "campanas": "Amazing Mexico",
+                    "turno": "COMPLETO MATUTINO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
                             "nombre": "MIGUEL GUTIERREZ",
+                            "posicion": "SUPERVISOR",
+                            "iniciales": "GR",
+                            "nomenclatura": "AMX1- Amazing Mexico",
+                            "campanas": "Amazing Mexico",
+                            "turno": "COMPLETO MATUTINO",
+                            "extension": "N/A",
                             "subordinados": [
                                 {
-                                    "nombre": "MARTHA GAMEZ"
+                                    "nombre": "MARTHA GAMEZ",
+                                    "posicion": "CERRADOR",
+                                    "iniciales": "MG",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "CHRISTIAN VIRGEN"
+                                    "nombre": "CHRISTIAN VIRGEN",
+                                    "posicion": "CERRADOR",
+                                    "iniciales": "CV",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "EMMANUEL CARRILLO"
+                                    "nombre": "EMMANUEL CARRILLO",
+                                    "posicion": "CERRADOR / AGENTE",
+                                    "iniciales": "EC",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "TURNO ESPECIAL",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "TIBNY GRASSO"
+                                    "nombre": "TIBNY GRASSO",
+                                    "posicion": "CERRADOR / AGENTE",
+                                    "iniciales": "TG",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "ANGEL JARET MARTINEZ"
+                                    "nombre": "ANGEL JARET MARTINEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "JA",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO VESPERTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "JUAN ROGELIO MEDINA"
+                                    "nombre": "JUAN ROGELIO MEDINA",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "JM",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO ESPECIAL",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "VERENICE SANCHEZ"
+                                    "nombre": "VERENICE SANCHEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "VZ",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "EDGAR LOPEZ"
+                                    "nombre": "EDGAR LOPEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "EL",
+                                    "nomenclatura": "AMX1- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 }
                             ]
                         }
@@ -198,30 +577,91 @@
                 },
                 {
                     "nombre": "ALAN SOLORSANO",
+                    "posicion": "GERENTE DE PISO",
+                    "iniciales": "AS",
+                    "nomenclatura": "AMX2- Amazing Mexico",
+                    "campanas": "Amazing Mexico",
+                    "turno": "COMPLETO MATUTINO",
+                    "extension": "N/A",
                     "subordinados": [
                         {
                             "nombre": "JOSE FRANCISCO MALDONADO",
+                            "posicion": "SUPERVISOR",
+                            "iniciales": "JF",
+                            "nomenclatura": "AMX2- Amazing Mexico",
+                            "campanas": "Amazing Mexico",
+                            "turno": "COMPLETO MATUTINO",
+                            "extension": "N/A",
                             "subordinados": [
                                 {
-                                    "nombre": "FERNANDO MELGAR"
+                                    "nombre": "FERNANDO MELGAR",
+                                    "posicion": "CERRADOR",
+                                    "iniciales": "FM",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "SANTIAGO GANEM"
+                                    "nombre": "SANTIAGO GANEM",
+                                    "posicion": "CERRADOR / AGENTE",
+                                    "iniciales": "SL",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO ESPECIAL",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "ADRIANA GONZALEZ"
+                                    "nombre": "ADRIANA GONZALEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "BG",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "MARCO RODRIGUEZ"
+                                    "nombre": "MARCO RODRIGUEZ",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "MR",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "JESUS EDUARDO DE LA TORRE"
+                                    "nombre": "JESUS EDUARDO DE LA TORRE",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "JB",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "MEDIO TURNO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "JUAN CARLOS OCHOA"
+                                    "nombre": "JUAN CARLOS OCHOA",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "JC",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 },
                                 {
-                                    "nombre": "FRANZ MADRIGAL"
+                                    "nombre": "FRANZ MADRIGAL",
+                                    "posicion": "AGENTE / CERRADOR",
+                                    "iniciales": "FA",
+                                    "nomenclatura": "AMX2- Amazing Mexico",
+                                    "campanas": "Amazing Mexico",
+                                    "turno": "COMPLETO MATUTINO",
+                                    "extension": "N/A",
+                                    "subordinados": []
                                 }
                             ]
                         }
@@ -229,6 +669,12 @@
                 },
                 {
                     "nombre": "FRANCISCO RODRIGUEZ",
+                    "posicion": "Desconocido",
+                    "iniciales": "FR",
+                    "nomenclatura": "AMX2- Amazing Mexico",
+                    "campanas": "Amazing Mexico",
+                    "turno": "",
+                    "extension": "N/A",
                     "subordinados": []
                 }
             ]
