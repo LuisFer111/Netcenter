@@ -1,0 +1,237 @@
+{
+    "TAFER": [
+        {
+            "nombre": "NOMBRE "
+        },
+        {
+            "nombre": "KYARA TREJO",
+            "subordinados": [
+                {
+                    "nombre": "MARIA MACIAS OROZCO ",
+                    "subordinados": [
+                        {
+                            "nombre": "ANGEL MENDOZA CASTELAN ",
+                            "subordinados": [
+                                {
+                                    "nombre": "VALERIA CORREA FIGUEROA "
+                                },
+                                {
+                                    "nombre": "EMILIO MARTINEZ CATALAN "
+                                }
+                            ]
+                        },
+                        {
+                            "nombre": "BRAYAN ROMERO ",
+                            "subordinados": [
+                                {
+                                    "nombre": "DANIEL ASUNCION SANCHEZ ",
+                                    "subordinados": [
+                                        {
+                                            "nombre": "DIEGO RAMIREZ "
+                                        },
+                                        {
+                                            "nombre": "CRISTIAN GOMEZ "
+                                        },
+                                        {
+                                            "nombre": "YAEL CASTAÑEDA "
+                                        },
+                                        {
+                                            "nombre": "NATASHA MARTINEZ "
+                                        },
+                                        {
+                                            "nombre": "RICARDO GUEVARA "
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "LUIS SOTO ZANABRIA",
+                    "subordinados": [
+                        {
+                            "nombre": "CHRISTIAN FLORES",
+                            "subordinados": [
+                                {
+                                    "nombre": "VIVIANA GASTELUM"
+                                },
+                                {
+                                    "nombre": "ANA KAREN HERNANDEZ"
+                                },
+                                {
+                                    "nombre": "ADAD IBARRA RANGEL"
+                                },
+                                {
+                                    "nombre": "LUIS MARTINEZ GOMEZ"
+                                },
+                                {
+                                    "nombre": "LUZ ARELI GARCIA"
+                                },
+                                {
+                                    "nombre": "JOSE OCTAVIO PEREZ"
+                                },
+                                {
+                                    "nombre": "EVERT RUTGER"
+                                },
+                                {
+                                    "nombre": "MARCO ANTONIO SANCHEZ"
+                                },
+                                {
+                                    "nombre": "PERLA JOCELINE CHAVEZ"
+                                },
+                                {
+                                    "nombre": "ITZEL SAMANTHA GONZALEZ"
+                                },
+                                {
+                                    "nombre": "JORGE YAN HERNANDEZ"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "VILLAGROUP": [
+        {
+            "nombre": "NOMBRE "
+        },
+        {
+            "nombre": "PABLO FERNANDEZ",
+            "subordinados": [
+                {
+                    "nombre": "EYMAR SANCHEZ",
+                    "subordinados": [
+                        {
+                            "nombre": "NAOMI SANCHEZ"
+                        },
+                        {
+                            "nombre": "ANA ALVAREZ"
+                        },
+                        {
+                            "nombre": "LUIS JIMENEZ"
+                        },
+                        {
+                            "nombre": "CITLALI SANCHEZ"
+                        },
+                        {
+                            "nombre": "MIGUEL SALAIS"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "REYNALDO AVILA",
+                    "subordinados": [
+                        {
+                            "nombre": "GUSTAVO MACIEL"
+                        },
+                        {
+                            "nombre": "ORLANDO DELGADO"
+                        },
+                        {
+                            "nombre": "GLORIA MEDINA"
+                        },
+                        {
+                            "nombre": "MELISSA ESPINOZA"
+                        },
+                        {
+                            "nombre": "NOE GOMEZ"
+                        },
+                        {
+                            "nombre": "EDUARDO CRUZ"
+                        },
+                        {
+                            "nombre": "DIEGO VILLA"
+                        },
+                        {
+                            "nombre": "SUI SARABIA"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "BALFER": [
+        {
+            "nombre": "NOMBRE "
+        },
+        {
+            "nombre": "ENRIQUE ROBLES",
+            "subordinados": [
+                {
+                    "nombre": "PASCUAL REYNOSO"
+                },
+                {
+                    "nombre": "KEVIN GARCIA",
+                    "subordinados": [
+                        {
+                            "nombre": "MIGUEL GUTIERREZ",
+                            "subordinados": [
+                                {
+                                    "nombre": "MARTHA GAMEZ"
+                                },
+                                {
+                                    "nombre": "CHRISTIAN VIRGEN"
+                                },
+                                {
+                                    "nombre": "EMMANUEL CARRILLO"
+                                },
+                                {
+                                    "nombre": "TIBNY GRASSO"
+                                },
+                                {
+                                    "nombre": "ANGEL JARET MARTINEZ"
+                                },
+                                {
+                                    "nombre": "JUAN ROGELIO MEDINA"
+                                },
+                                {
+                                    "nombre": "VERENICE SANCHEZ"
+                                },
+                                {
+                                    "nombre": "EDGAR LOPEZ"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "ALAN SOLORSANO",
+                    "subordinados": [
+                        {
+                            "nombre": "JOSE FRANCISCO MALDONADO",
+                            "subordinados": [
+                                {
+                                    "nombre": "FERNANDO MELGAR"
+                                },
+                                {
+                                    "nombre": "SANTIAGO GANEM"
+                                },
+                                {
+                                    "nombre": "ADRIANA GONZALEZ"
+                                },
+                                {
+                                    "nombre": "MARCO RODRIGUEZ"
+                                },
+                                {
+                                    "nombre": "JESUS EDUARDO DE LA TORRE"
+                                },
+                                {
+                                    "nombre": "JUAN CARLOS OCHOA"
+                                },
+                                {
+                                    "nombre": "FRANZ MADRIGAL"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "FRANCISCO RODRIGUEZ",
+                    "subordinados": []
+                }
+            ]
+        }
+    ]
+}
