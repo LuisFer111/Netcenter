@@ -8,7 +8,8 @@
             "campanas": "CAMPAÑAS",
             "turno": "TURNO",
             "extension": "N/A",
-            "subordinados": []
+            "subordinados": [],
+            "color": "gris"
         },
         {
             "nombre": "KYARA TREJO",
@@ -45,7 +46,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "EMILIO MARTINEZ CATALAN",
@@ -55,9 +57,11 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 }
-                            ]
+                            ],
+                            "color": "gris"
                         },
                         {
                             "nombre": "BRAYAN ROMERO",
@@ -85,7 +89,8 @@
                                             "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                             "turno": "MEDIO TURNO VESPERTINO",
                                             "extension": "N/A",
-                                            "subordinados": []
+                                            "subordinados": [],
+                                            "color": "gris"
                                         },
                                         {
                                             "nombre": "CRISTIAN GOMEZ",
@@ -95,7 +100,8 @@
                                             "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                             "turno": "MEDIO TURNO VESPERTINO",
                                             "extension": "N/A",
-                                            "subordinados": []
+                                            "subordinados": [],
+                                            "color": "gris"
                                         },
                                         {
                                             "nombre": "YAEL CASTAÑEDA",
@@ -105,7 +111,8 @@
                                             "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                             "turno": "MEDIO TURNO VESPERTINO",
                                             "extension": "N/A",
-                                            "subordinados": []
+                                            "subordinados": [],
+                                            "color": "gris"
                                         },
                                         {
                                             "nombre": "NATASHA MARTINEZ",
@@ -115,7 +122,8 @@
                                             "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                             "turno": "MEDIO TURNO VESPERTINO",
                                             "extension": "N/A",
-                                            "subordinados": []
+                                            "subordinados": [],
+                                            "color": "gris"
                                         },
                                         {
                                             "nombre": "RICARDO GUEVARA",
@@ -125,13 +133,17 @@
                                             "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                             "turno": "TURNO ESPECIAL",
                                             "extension": "N/A",
-                                            "subordinados": []
+                                            "subordinados": [],
+                                            "color": "gris"
                                         }
-                                    ]
+                                    ],
+                                    "color": "gris"
                                 }
-                            ]
+                            ],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 },
                 {
                     "nombre": "LUIS SOTO ZANABRIA",
@@ -159,7 +171,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "ANA KAREN HERNANDEZ",
@@ -169,7 +182,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "ADAD IBARRA RANGEL",
@@ -179,7 +193,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "LUIS MARTINEZ GOMEZ",
@@ -189,7 +204,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "LUZ ARELI GARCIA",
@@ -199,7 +215,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "JOSE OCTAVIO PEREZ",
@@ -209,7 +226,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "EVERT RUTGER",
@@ -219,7 +237,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "MARCO ANTONIO SANCHEZ",
@@ -229,7 +248,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "PERLA JOCELINE CHAVEZ",
@@ -239,7 +259,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "ITZEL SAMANTHA GONZALEZ",
@@ -249,7 +270,8 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "JORGE YAN HERNANDEZ",
@@ -259,13 +281,17 @@
                                     "campanas": "Save to Travel - Senses of Mexico - Amazing Mexico",
                                     "turno": "MEDIO TURNO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 }
-                            ]
+                            ],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 }
-            ]
+            ],
+            "color": "gris"
         }
     ],
     "VILLAGROUP": [
@@ -277,7 +303,8 @@
             "campanas": "CAMPAÑAS",
             "turno": "TURNO",
             "extension": "N/A",
-            "subordinados": []
+            "subordinados": [],
+            "color": "gris"
         },
         {
             "nombre": "PABLO FERNANDEZ",
@@ -305,7 +332,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "ANA ALVAREZ",
@@ -315,7 +343,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "LUIS JIMENEZ",
@@ -325,7 +354,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "TURNO COMPLETO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "CITLALI SANCHEZ",
@@ -335,7 +365,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "MIGUEL SALAIS",
@@ -345,9 +376,11 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "TURNO COMPLETO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 },
                 {
                     "nombre": "REYNALDO AVILA",
@@ -366,7 +399,8 @@
                             "campanas": "Amazing Villagroup - Beach Vibes Americas",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "ORLANDO DELGADO",
@@ -376,7 +410,8 @@
                             "campanas": "Amazing Villagroup - Beach Vibes Americas",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "GLORIA MEDINA",
@@ -386,7 +421,8 @@
                             "campanas": "Amazing Villagroup - Beach Vibes Americas",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "MELISSA ESPINOZA",
@@ -396,7 +432,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "NOE GOMEZ",
@@ -406,7 +443,8 @@
                             "campanas": "Amazing Villagroup - Beach Vibes Americas",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "EDUARDO CRUZ",
@@ -416,7 +454,8 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "DIEGO VILLA",
@@ -426,7 +465,8 @@
                             "campanas": "Amazing Villagroup - Beach Vibes Americas",
                             "turno": "TURNO COMPLETO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         },
                         {
                             "nombre": "SUI SARABIA",
@@ -436,11 +476,14 @@
                             "campanas": "Amazing Villagroup",
                             "turno": "MEDIO TURNO",
                             "extension": "N/A",
-                            "subordinados": []
+                            "subordinados": [],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 }
-            ]
+            ],
+            "color": "gris"
         }
     ],
     "BALFER": [
@@ -452,7 +495,8 @@
             "campanas": "CAMPAÑAS",
             "turno": "TURNO",
             "extension": "N/A",
-            "subordinados": []
+            "subordinados": [],
+            "color": "gris"
         },
         {
             "nombre": "ENRIQUE ROBLES",
@@ -471,7 +515,8 @@
                     "campanas": "Amazing Mexico",
                     "turno": "TURNO COMPLETO H.O",
                     "extension": "N/A",
-                    "subordinados": []
+                    "subordinados": [],
+                    "color": "gris"
                 },
                 {
                     "nombre": "KEVIN GARCIA",
@@ -499,7 +544,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "CHRISTIAN VIRGEN",
@@ -509,7 +555,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "EMMANUEL CARRILLO",
@@ -519,7 +566,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "TURNO ESPECIAL",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "TIBNY GRASSO",
@@ -529,7 +577,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "ANGEL JARET MARTINEZ",
@@ -539,7 +588,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO VESPERTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "JUAN ROGELIO MEDINA",
@@ -549,7 +599,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO ESPECIAL",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "VERENICE SANCHEZ",
@@ -559,7 +610,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "EDGAR LOPEZ",
@@ -569,11 +621,14 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 }
-                            ]
+                            ],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 },
                 {
                     "nombre": "ALAN SOLORSANO",
@@ -601,7 +656,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "SANTIAGO GANEM",
@@ -611,7 +667,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO ESPECIAL",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "ADRIANA GONZALEZ",
@@ -621,7 +678,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "MARCO RODRIGUEZ",
@@ -631,7 +689,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "JESUS EDUARDO DE LA TORRE",
@@ -641,7 +700,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "MEDIO TURNO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "JUAN CARLOS OCHOA",
@@ -651,7 +711,8 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 },
                                 {
                                     "nombre": "FRANZ MADRIGAL",
@@ -661,11 +722,14 @@
                                     "campanas": "Amazing Mexico",
                                     "turno": "COMPLETO MATUTINO",
                                     "extension": "N/A",
-                                    "subordinados": []
+                                    "subordinados": [],
+                                    "color": "gris"
                                 }
-                            ]
+                            ],
+                            "color": "gris"
                         }
-                    ]
+                    ],
+                    "color": "gris"
                 },
                 {
                     "nombre": "FRANCISCO RODRIGUEZ",
@@ -675,9 +739,11 @@
                     "campanas": "Amazing Mexico",
                     "turno": "",
                     "extension": "N/A",
-                    "subordinados": []
+                    "subordinados": [],
+                    "color": "gris"
                 }
-            ]
+            ],
+            "color": "gris"
         }
     ]
 }
