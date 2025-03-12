@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboards - NetCenter</title>
     <style>
+        /* Animación del fondo */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 50% 50%; }
+            100% { background-position: 100% 100%; }
+        }
+        
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 0; 
             padding: 0;
-            background: linear-gradient(45deg, #1e1e1e, #2c3e50);
+            background: url("https://luisfer111.github.io/Netcenter/imagenes/fondo.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            animation: backgroundAnimation 60s infinite alternate linear;
             text-align: center;
             color: white;
-        }
+        }  
 
         header {
             background-color: rgba(30, 30, 30, 0.9);
@@ -63,9 +74,10 @@
         footer {
             margin-top: 20px;
             padding: 10px;
-            background-color: rgba(30, 30, 30, 0.9);
-            color: white;
             font-size: 14px;
+            text-align: center;
+            background: none;
+            color: white;
         }
     </style>
 </head>
@@ -88,7 +100,7 @@
             frameborder="0" allowFullScreen="true">
         </iframe>
 
-        <br><br> <!-- Espaciado entre los iframes -->
+        <br><br>
 
         <!-- Segundo iframe -->
         <iframe title="Reporte de Indus" width="600" height="373.5" 
