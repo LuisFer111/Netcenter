@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <header>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="https://luisfer111.github.io/Netcenter/ntc.png" alt="NetCenter Logo">
+        </a>
+    </div>
+</header>
   <meta charset="UTF-8" />
   <title>Buscador de Empleados</title>
-  <style>
-    /* ---------------------
-      ESTILOS GENERALES
-       --------------------- */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px auto;
-      max-width: 700px;
-      line-height: 1.4;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
+  <!-- Carga de Font Awesome para los íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+<!-- Carga de la fuente Roboto desde Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="https://luisfer111.github.io/Netcenter/imagenes/netncenter.jpg">
+  <style>
+    /* Animación del fondo */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 50% 50%; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    padding: 0;
+    background: url("https://luisfer111.github.io/Netcenter/imagenes/fondo.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: backgroundAnimation 60s infinite alternate linear;
+    text-align: center;
+    color: white;
+}
     /* ---------------------
       BUSCADOR PRINCIPAL
        --------------------- */
